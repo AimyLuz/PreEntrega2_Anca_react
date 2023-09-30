@@ -35,7 +35,7 @@ function NavBar() {
     <NavDropdown title="Bajos" id="basic-nav-dropdown" className="items_menu">
             <NavDropdown.Item href="#">Bajos</NavDropdown.Item>
             {/*<NavDropdown.Divider />
-             <NavDropdown.Item href="#">Accesorios para Bajo</NavDropdown.Item>
+            <NavDropdown.Item href="#">Accesorios para Bajo</NavDropdown.Item>
             <NavDropdown.Item href="#">Amplificadores Bajo</NavDropdown.Item>
             <NavDropdown.Item href="#">Pedales y Pedaleras Bajo</NavDropdown.Item> */}
             </NavDropdown>
