@@ -23,22 +23,23 @@ function NavBar() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
+          {/* LOS ELEMENTOS QUE ESTAN OCULTOS SERÁN AGREGADOS MAS ADELANTE YA QUE ERAN MÁS DE LOS SOLICITADOS PARA ESTA ENTREGA*/}
     <NavDropdown title="Guitarras" id="basic-nav-dropdown" className="items_menu">
-            <NavDropdown.Item href="#">Guitarras Eléctricas</NavDropdown.Item>
-            <NavDropdown.Item href="#">Guitarras Clásicas</NavDropdown.Item>
-            {/* <NavDropdown.Item href="#">Guitarras Acústicas</NavDropdown.Item>
+            <NavDropdown.Item >Guitarras Acusticas</NavDropdown.Item>
+            <NavDropdown.Item >Guitarras Eléctricas</NavDropdown.Item>
+            {/* <NavDropdown.Item href="#">Guitarras Clasicas</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="#">Accesorios Guitarras</NavDropdown.Item>
             <NavDropdown.Item href="#">Amplificadores Guitarras</NavDropdown.Item>
             <NavDropdown.Item href="#">Pedales y Pedaleras Guitarra</NavDropdown.Item> */}
     </NavDropdown>
-    <NavDropdown title="Bajos" id="basic-nav-dropdown" className="items_menu">
+    {/*<NavDropdown title="Bajos" id="basic-nav-dropdown" className="items_menu">
             <NavDropdown.Item href="#">Bajos</NavDropdown.Item>
-            {/*<NavDropdown.Divider />
+            <NavDropdown.Divider />
             <NavDropdown.Item href="#">Accesorios para Bajo</NavDropdown.Item>
             <NavDropdown.Item href="#">Amplificadores Bajo</NavDropdown.Item>
-            <NavDropdown.Item href="#">Pedales y Pedaleras Bajo</NavDropdown.Item> */}
-            </NavDropdown>
+            <NavDropdown.Item href="#">Pedales y Pedaleras Bajo</NavDropdown.Item> 
+            </NavDropdown>*/}
             <NavDropdown title="Percusión" id="basic-nav-dropdown" className="items_menu">
             <NavDropdown.Item href="#">Baterías Acústicas</NavDropdown.Item>
               <NavDropdown.Item href="#">Baterías Electrónicas</NavDropdown.Item>
@@ -60,22 +61,22 @@ function NavBar() {
             <NavDropdown.Item href="#">Trompetas</NavDropdown.Item>
             {/* <NavDropdown.Item href="#">Otros</NavDropdown.Item> */}
             </NavDropdown>
-            <NavDropdown title="Audio y Home Studio" id="basic-nav-dropdown" className="items_menu">
+            {/*<NavDropdown title="Audio y Home Studio" id="basic-nav-dropdown" className="items_menu">
             <NavDropdown.Item href="#">Parlantes Bluetooth</NavDropdown.Item>
             <NavDropdown.Item href="#">Audio Hogar</NavDropdown.Item>
-            {/* <NavDropdown.Item href="#">Micrófonos y Soportes</NavDropdown.Item>
+             <NavDropdown.Item href="#">Micrófonos y Soportes</NavDropdown.Item>
             <NavDropdown.Item href="#">Auriculares</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="#">Monitores de Estudio</NavDropdown.Item>
             <NavDropdown.Item href="#">Placas de audio</NavDropdown.Item>
             <NavDropdown.Item href="#">Consolas y Mixers</NavDropdown.Item>
             <NavDropdown.Item href="#">Paneles acústicos</NavDropdown.Item>
-            <NavDropdown.Item href="#">Accesorios de sonido</NavDropdown.Item> */}
+            <NavDropdown.Item href="#">Accesorios de sonido</NavDropdown.Item> 
             </NavDropdown>
             <NavDropdown title="Otros" id="basic-nav-dropdown" className="items_menu">
             <NavDropdown.Item href="#">Ukeleles</NavDropdown.Item>
             <NavDropdown.Item href="#">Ins. de cuerda</NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown>*/}
           </Nav>
           <Form className="d-flex buscardor">
             <Form.Control

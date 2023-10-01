@@ -10,11 +10,12 @@
     border-color: #FFF6E0;
     color: #FFF6E0;
     background-color:#272829 ;
+    border-radius: 5px;
 }
-.Button:hover {
-    background-color: #FE502D;
-    border-color: #FFF6E0;
-    color: #FFF6E0;
+.Agregar:hover {
+  background-color: #FE502D;
+  border-color: #FFF6E0;
+  color: #FFF6E0;
 }
 .Number {
     margin: 10px 20px 10px 20px;
