@@ -8,6 +8,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import CartWidget from "../CartWidget/CartWidget";
 import logo from "./img/logo.png";
+import { NavLink } from 'react-router-dom';
 
 function NavBar() {
   return (
@@ -24,9 +25,9 @@ function NavBar() {
             navbarScroll
           >
           {/* LOS ELEMENTOS QUE ESTAN OCULTOS SERÁN AGREGADOS MAS ADELANTE YA QUE ERAN MÁS DE LOS SOLICITADOS PARA ESTA ENTREGA*/}
-    <NavDropdown title="Guitarras" id="basic-nav-dropdown" className="items_menu">
-            <NavDropdown.Item >Guitarras Acusticas</NavDropdown.Item>
-            <NavDropdown.Item >Guitarras Eléctricas</NavDropdown.Item>
+    <NavDropdown title="Guitarras" id="basic-nav-dropdown" className="items_menu categories">
+            <NavDropdown.Item as={NavLink} activeClassName to ="/category/guitarras_acusticas" className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Guitarras Acusticas</NavDropdown.Item>
+            <NavDropdown.Item as={NavLink} activeClassName to ="/category/guitarras_electricas" className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Guitarras Eléctricas</NavDropdown.Item>
             {/* <NavDropdown.Item href="#">Guitarras Clasicas</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item href="#">Accesorios Guitarras</NavDropdown.Item>
@@ -41,8 +42,8 @@ function NavBar() {
             <NavDropdown.Item href="#">Pedales y Pedaleras Bajo</NavDropdown.Item> 
             </NavDropdown>*/}
             <NavDropdown title="Percusión" id="basic-nav-dropdown" className="items_menu">
-            <NavDropdown.Item href="#">Baterías Acústicas</NavDropdown.Item>
-              <NavDropdown.Item href="#">Baterías Electrónicas</NavDropdown.Item>
+            <NavDropdown.Item as={NavLink} activeClassName to ="/category/baterias_acusticas" className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Baterías Acústicas</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} activeClassName to ="/category/baterias_electronicas" className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Baterías Electrónicas</NavDropdown.Item>
               {/* <NavDropdown.Item href="#">Platillos</NavDropdown.Item>
               <NavDropdown.Item href="#">Redoblantes</NavDropdown.Item>
               <NavDropdown.Divider />
@@ -51,14 +52,14 @@ function NavBar() {
               <NavDropdown.Item href="#">Pequeña percusión</NavDropdown.Item> */}
             </NavDropdown>
             <NavDropdown title="Teclados y Pianos" id="basic-nav-dropdown" className="items_menu">
-            <NavDropdown.Item href="#">Teclados</NavDropdown.Item>
-            <NavDropdown.Item href="#">Pianos</NavDropdown.Item>
+            <NavDropdown.Item as={NavLink} activeClassName to ="/category/teclados" className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Teclados</NavDropdown.Item>
+            <NavDropdown.Item as={NavLink} activeClassName to ="/category/pianos" className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Pianos</NavDropdown.Item>
             {/* <NavDropdown.Divider />
             <NavDropdown.Item href="#">Soportes para Piano y Teclado</NavDropdown.Item> */}
             </NavDropdown>
             <NavDropdown title="Vientos" id="basic-nav-dropdown" className="items_menu">
-            <NavDropdown.Item href="#">Saxofones</NavDropdown.Item>
-            <NavDropdown.Item href="#">Trompetas</NavDropdown.Item>
+            <NavDropdown.Item as={NavLink} activeClassName to ="/category/saxofones" className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Saxofones</NavDropdown.Item>
+            <NavDropdown.Item as={NavLink} activeClassName to ="/category/trompetas" className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Trompetas</NavDropdown.Item>
             {/* <NavDropdown.Item href="#">Otros</NavDropdown.Item> */}
             </NavDropdown>
             {/*<NavDropdown title="Audio y Home Studio" id="basic-nav-dropdown" className="items_menu">

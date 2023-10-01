@@ -1,6 +1,7 @@
 import './Item.css';
 import ItemCount from '../ItemCount/ItemCount';
 import Button from "react-bootstrap/Button";
+import { Link } from 'react-router-dom';
 
 const Item = ({id, name, img, price, stock}) =>{
     
@@ -23,7 +24,7 @@ const Item = ({id, name, img, price, stock}) =>{
                 </p>
             </section>
             <footer className='ItemFooter'>
-                <Button variant="dark" className='Option'>Ver detalle</Button>
+                <Link to={`/item/${id}`} className='Option'>Ver detalle</Link>
             </footer>
             <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log('Cantidad agregada', quantity)}/>
         </article>
