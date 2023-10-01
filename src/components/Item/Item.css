@@ -18,11 +18,17 @@
 }
 
 .Option {
-    border-color: #FFF6E0;
+    border: solid 3px #272829 ;
     color: #FFF6E0;
     background-color:#272829 ;
+    border-radius: 5px;
+    text-decoration: none;
 }
-
+.Option:hover {
+    background-color: #FE502D;
+    border-color: #FFF6E0;
+    color: #FFF6E0;
+}
 .ItemHeader {
     font-size: 1rem;
 }
