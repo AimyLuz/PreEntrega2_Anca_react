@@ -16,15 +16,16 @@ const Item = ({id, name, img, price, stock}) =>{
                 <img src={img} alt={name} className='ItemImg'/>
             </picture>
             <section>
-                <p className='Info'>
+                <p className='Info Precio'>
                     Precio: ${price}
                 </p>
+                <Button variant="dark" className='Button' ><Link to={`/item/${id}`} className='Option'>Ver detalle</Link></Button>
+                
+            </section>
+            <footer className='ItemFooter'>
                 <p className='Info'>
                     Stock disponible: {stock}
                 </p>
-            </section>
-            <footer className='ItemFooter'>
-                <Link to={`/item/${id}`} className='Option'>Ver detalle</Link>
             </footer>
         </article>
     )
