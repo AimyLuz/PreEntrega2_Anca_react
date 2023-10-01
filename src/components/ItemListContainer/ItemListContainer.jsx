@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { getProducts, getProductByCategory } from '../../asyncMock';
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
+import './ItemListContainer.css'
 
 
 
@@ -38,7 +39,7 @@ const ItemListContainer = ({ greeting }) => {
       asyncFunc(categoryId)
         .then(response => {
           if (Array.isArray(response)) {
-            console.log('Datos de productos válidos:', response); // Agrega este log
+            console.log('Datos de productos válidos:', response); 
             setProducts(response);
           } else {
             console.error('Los datos de productos no están en el formato esperado.');

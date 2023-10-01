@@ -14,9 +14,9 @@ function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary ">
       <Container fluid>
-      <a className="navbar-brand" href="#">
-      <img src={logo} alt="logo" className="logo" />
-        </a>
+      <NavLink to="/" className="navbar-brand">
+          <img src={logo} alt="logo" className="logo" />
+        </NavLink>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -26,7 +26,7 @@ function NavBar() {
           >
           {/* LOS ELEMENTOS QUE ESTAN OCULTOS SERÁN AGREGADOS MAS ADELANTE YA QUE ERAN MÁS DE LOS SOLICITADOS PARA ESTA ENTREGA*/}
     <NavDropdown title="Guitarras" id="basic-nav-dropdown" className="items_menu categories">
-            <NavDropdown.Item as={NavLink} activeclassname="active" to="/category/guitarras_acusticas" className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Guitarras Acusticas</NavDropdown.Item>
+            <NavDropdown.Item as={NavLink} activeclassname="active" to="/category/guitarras_acusticas" className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Guitarras Acústicas</NavDropdown.Item>
             <NavDropdown.Item as={NavLink} activeclassname="active" to="/category/guitarras_electricas" className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Guitarras Eléctricas</NavDropdown.Item>
             {/* <NavDropdown.Item href="#">Guitarras Clasicas</NavDropdown.Item>
             <NavDropdown.Divider />

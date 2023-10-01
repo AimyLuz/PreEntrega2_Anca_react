@@ -50,8 +50,8 @@ const products = [
         price: 937875,
         category: 'guitarras_electricas',
         img: 'https://http2.mlstatic.com/D_NQ_NP_997723-MLA48678524788_122021-O.webp',
-        carruselDos:'',
-        carruselTres: '',
+        carruselDos:'https://http2.mlstatic.com/D_NQ_NP_762880-MLA48678624108_122021-O.webp',
+        carruselTres: 'https://http2.mlstatic.com/D_NQ_NP_912763-MLA48678553630_122021-O.webp',
         stock: 10,
         description: 'EPIPHONE ORIGINAL COLLECTION EXPLORER DESIGNER - DIESTRO - EBONY - CAOBA - LAUREL INDIO - BRILLANTE'
     },
@@ -61,8 +61,8 @@ const products = [
         price: 486940,
         category: 'baterias_acusticas',
         img: 'https://http2.mlstatic.com/D_NQ_NP_789233-MLA71474826422_092023-O.webp',
-        carruselDos:'https://http2.mlstatic.com/D_NQ_NP_762880-MLA48678624108_122021-O.webp',
-        carruselTres: 'https://http2.mlstatic.com/D_NQ_NP_912763-MLA48678553630_122021-O.webp',
+        carruselDos:'https://http2.mlstatic.com/D_NQ_NP_757041-MLA54773617691_032023-O.webp',
+        carruselTres: 'https://http2.mlstatic.com/D_NQ_NP_933375-MLA32721144628_102019-O.webp',
         stock: 10,
         description: 'BATERIA ACUSTICA MAPEX PRODIGY 5 CUERPOS FIERROS BANQUETA'
     },
@@ -95,8 +95,8 @@ const products = [
         price: 447051,
         category: 'teclados',
         img: 'https://http2.mlstatic.com/D_NQ_NP_732504-MLU70427566265_072023-O.webp',
-        carruselDos:'',
-        carruselTres: '',
+        carruselDos:'https://http2.mlstatic.com/D_NQ_NP_734531-MLU70403057138_072023-O.webp',
+        carruselTres: 'https://http2.mlstatic.com/D_NQ_NP_985012-MLU70403057140_072023-O.webp',
         stock: 10,
         description: 'TECLADO CASIO CT-S500 61 NOTAS BLUETOOTH COLOR NEGRO'
     },
@@ -106,8 +106,8 @@ const products = [
         price: 199800,
         category: 'pianos',
         img: 'https://http2.mlstatic.com/D_NQ_NP_836289-MLA54648235154_032023-O.webp',
-        carruselDos:'https://http2.mlstatic.com/D_NQ_NP_734531-MLU70403057138_072023-O.webp',
-        carruselTres: 'https://http2.mlstatic.com/D_NQ_NP_985012-MLU70403057140_072023-O.webp',
+        carruselDos:'https://http2.mlstatic.com/D_NQ_NP_727083-MLA54648235162_032023-O.webp',
+        carruselTres: 'https://http2.mlstatic.com/D_NQ_NP_695625-MLA54648235168_032023-O.webp',
         stock: 10,
         description: 'PIANO ELECTRICO DIGITAL ROLAND F701CB CON MUEBLE PRM'
     },
@@ -161,7 +161,7 @@ export const getProductById = (productId) => {
 export const getProductByCategory = (productCategory) => {
     return new Promise ((resolve) => {
         setTimeout (() => {
-            resolve(products.find(prod => prod.category === productCategory))
+            resolve(products.filter(prod => prod.category === productCategory))
         }, 500)
     })
 };
