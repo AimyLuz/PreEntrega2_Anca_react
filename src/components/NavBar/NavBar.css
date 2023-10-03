@@ -13,9 +13,9 @@ Form .boton_buscar:hover {
     color: #FFF6E0;
 }
 
-
-
-
+.navbar-toggler-icon {
+    background-color: #FFF6E0;}
+    
 .logo {
     width: 250px;
 }
