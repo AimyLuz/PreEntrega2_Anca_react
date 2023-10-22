@@ -20,3 +20,7 @@
 .ItemHeaderDetail {
     font-size: 1.8rem;
 }
+.Terminar {
+    text-decoration: none;
+    color: aliceblue;
+}
